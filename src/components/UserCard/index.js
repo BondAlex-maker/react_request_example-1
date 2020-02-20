@@ -1,7 +1,12 @@
 import React from 'react';
 
 function UserCard (props) {
-  return JSON.stringify(props.user, null, 4);
+  const {user} = props;
+  return (
+    <div>
+      <img src={user.profilePicture} alt=""/>
+    </div>
+  );
 }
 
 export default UserCard;
